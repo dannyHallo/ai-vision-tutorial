@@ -20,6 +20,8 @@ void startCameraServer();
 void setupLedFlash(int pin);
 
 void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+
   Serial.begin(115200);
   Serial.setDebugOutput(true);
   Serial.println();
@@ -128,7 +130,11 @@ void setup() {
   Serial.println("' to connect");
 }
 
+// the loop function runs over and over again forever
 void loop() {
-  // Do nothing. Everything is done in another task by the web server
-  delay(10000);
+  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(2000);                      // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
+  delay(1000);                      // wait for a second
 }
+

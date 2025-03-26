@@ -36,14 +36,18 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 5. Navigate to Tools > PSRAM > Select `OPI PSRAM`
 
-6. Open the project at `./cam`
+6. Click to open the esp32 project at `./cam/cam.ino`
 
 7. Insert your own credentials
 
    - Get your own WIFI credentials by copying credential.h.template, and rename it into credential.h, then fill your WIFI credential in it.
-   - ! DO NOT CHANGE THE TEMPLATE FILE.
+   - Please do not change the template file.
 
-8. Upload to your board!
+8. Upload the program to your board!
+
+# Python
+
+1. Use your computer, and connect to the internet.
 
 # References
 
