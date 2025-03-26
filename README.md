@@ -6,7 +6,7 @@ ESP-32-S3 board with camera module.
 
 For reference, we are using Seeed Studio XIAO ESP32S3 Sense module.
 
-# IDE configuration
+## IDE setup
 
 We are using Arduino with ESP32 configuration set.
 
@@ -36,18 +36,34 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 5. Navigate to Tools > PSRAM > Select `OPI PSRAM`
 
-6. Click to open the esp32 project at `./cam/cam.ino`
+## Code compilation and upload to board
 
-7. Insert your own credentials
+1. Click to open the esp32 project at `./cam/cam.ino`
+
+2. Insert your own credentials
 
    - Get your own WIFI credentials by copying credential.h.template, and rename it into credential.h, then fill your WIFI credential in it.
-   - Please do not change the template file.
 
-8. Upload the program to your board!
+3. Upload the program to your board!
 
-# Python
+# Computer-side software configuration
 
-1. Use your computer, and connect to the internet.
+## Connections to made
+
+1. Ensure your computer is connected to the same Wifi as your board, and use a usb lable to connect your board with your computer both for power supply and serial communication purposes. The images are sent via Wifi from the esp32 board to your computer, however, the communication from your computer back to the board to indicate the presence is currently using serial for simplicity of demonstration and extendability.
+
+## Configurations
+
+1. The repo of the software is located under `./home_server/`, copy and paste `custom_config.py.template` to create your own version of `custom_config.py`, and fillin the fields correspondingly.
+
+## Python env setup
+
+```shell
+conda create -n smart-cam python=3.9 -y
+conda activate smart-cam
+pip install -r home_server/requirements.txt
+python home_server/main.py
+```
 
 # References
 

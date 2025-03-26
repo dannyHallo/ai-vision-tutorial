@@ -1,0 +1,5 @@
+# Store API configuration in a dictionary
+class custom_config:
+    detecting_item = "mug" # Replace with the item you want to detect
+    api_key = "" # Replace with your own API key
+    com_port = "" # Replace with your own COM port of the board, e.g. "COM3"
