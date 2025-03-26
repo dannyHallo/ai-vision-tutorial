@@ -1,2 +1,4 @@
 cam/credential.h
+home_server/custom_config.py
 results/
+**/__pycache__/

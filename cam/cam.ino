@@ -132,9 +132,18 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(2000);                      // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
-  delay(1000);                      // wait for a second
-}
+  if (Serial.available() > 0) {
+    String msg = Serial.readString();
 
+    Serial.print("message received: ");
+    Serial.println(msg);
+
+    if (msg == "ledon" || msg == "ledon\n") {
+      digitalWrite(LED_BUILTIN, LOW);
+      Serial.println("LED turned on");
+    } else if (msg == "ledoff" || msg == "ledoff\n") {
+      digitalWrite(LED_BUILTIN, HIGH);
+      Serial.println("LED turned off");
+    }
+  }
+}

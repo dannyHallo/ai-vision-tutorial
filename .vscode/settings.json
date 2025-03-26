@@ -1,7 +1,7 @@
 {
   "command-runner.commands": {
     "create env": "conda create -n smart-cam python=3.9 -y",
-    "install requirements": "conda activate smart-cam && pip install -r home-server/requirements.txt",
-    "run app": "conda activate smart-cam && python home-server/main.py"
+    "install requirements": "conda activate smart-cam && pip install -r home_server/requirements.txt",
+    "run app": "conda activate smart-cam && python home_server/main.py"
   }
 }
