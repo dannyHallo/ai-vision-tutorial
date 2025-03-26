@@ -1,5 +1,7 @@
 # IMPORTANT NOTES [delete me]
 
+- before export, delete this part, delete the REQUIREMENTS: xxx, delete self check tables
+
 - FYI, [typora](https://typora.io/) can be used to output this doc to pdf format.
 
 - Markdown is recommended from the requirement doc:
