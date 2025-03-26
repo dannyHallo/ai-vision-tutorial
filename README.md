@@ -263,3 +263,9 @@ Add references, like youtube videos / volc API book (for the python & LLM part),
 
 REQUIREMENTS: Acknowledge any sources for help, including AI tools. A
 contribution statement is required if the tutorial is a teamwork.
+
+| Basic Structure? | Content filled? | Grammar? | Figures Added? | Formatted? |
+| ---------------- | --------------- | -------- | -------------- | ---------- |
+| GPT it           | GPT it          | GPT it   |                |            |
+
+GPT it
